@@ -8,7 +8,6 @@ import PostCard from '../components/PostCard'
 import PostForm from '../components/PostForm'
 const Home = () => {
     const {user} = useContext(AuthContext)
-    let posts =[]
     const {
         loading,
         data

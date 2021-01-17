@@ -15,7 +15,7 @@ function DeleteButton({postId,commentId,callback}) {
                     query:FETCH_POSTS_QUERY
                 })
                 let newData =[...data.getPosts]
-                console.log(newData)
+                
                 newData = newData.filter(p=> p.id !==postId)
                 proxy.writeQuery({query:FETCH_POSTS_QUERY,
                     data: {

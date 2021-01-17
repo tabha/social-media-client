@@ -33,8 +33,8 @@ function PostForm(props) {
 
     function createPostCallback(){
         createPost()
-            .then(res=>console.log(res))
-            .catch(err=> console.log(err))
+            .then(res=>null)
+            .catch(err=> null)
 
     }
     return (

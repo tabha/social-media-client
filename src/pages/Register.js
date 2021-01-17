@@ -3,12 +3,12 @@ import {Form,Button} from "semantic-ui-react";
 import {useMutation} from "@apollo/client";
 import useForm from '../util/hooks'
 import gql from "graphql-tag";
-import {AuthContext,AuthProvider} from '../context/auth'
+import {AuthContext} from '../context/auth'
 const Register = (props) => {
     const {
-        user,
+        
         login,
-        logout
+        
     }= useContext(AuthContext)
     const [errors,setErrors] = useState({})
 
@@ -32,8 +32,8 @@ const Register = (props) => {
 
     function registerUser(){
         addUser()
-            .then(res=>console.log(res))
-            .catch(err=>console.log(err))
+            .then(res=>null)
+            .catch(err=>null)
     }
     return (
         <div className="form-container">

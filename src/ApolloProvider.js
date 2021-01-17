@@ -6,7 +6,6 @@ import {
     InMemoryCache,
     createHttpLink,
     ApolloProvider,
-    Int
 } from '@apollo/client'
 const authLink = setContext(()=> {
     const token = localStorage.getItem('jwtToken')
